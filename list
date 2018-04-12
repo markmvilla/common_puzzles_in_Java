@@ -1,0 +1,3 @@
+//33 consecutive duplicates
+//1: use count array, O(n) time with O(n) space
+//2: use actual_sum - should_be_sum O(n) with O(1) space
