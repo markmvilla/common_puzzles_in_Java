@@ -1,3 +1,9 @@
 //33 consecutive duplicates
 //1: use count array, O(n) time with O(n) space
 //2: use actual_sum - should_be_sum O(n) with O(1) space
+//39 two egg problem
+//1: this is a triangular series, n/2*(n+1) >= 100
+//12
+//log(n)
+//13
+//
