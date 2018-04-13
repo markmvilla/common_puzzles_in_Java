@@ -20,5 +20,5 @@ public static int rotationSearchDict(String[] dict, int startIndex, int endIndex
   }
  }
  //40
- //
- //
+ //hashmap search O(n) time, O(n) space
+ //count array O(n) time, O(n) space
