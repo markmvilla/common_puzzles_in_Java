@@ -1,8 +1,12 @@
+//big-o
+//logarithms
+//triangular series
 //33 consecutive duplicates
 //1: use count array, O(n) time with O(n) space
 //2: use actual_sum - should_be_sum O(n) with O(1) space
 //39 two egg problem
 //1: this is a triangular series, n/2*(n+1) >= 100
+//binary search
 //12
 //O(lg n)
 //13
@@ -44,7 +48,8 @@ public static int rotationSearchDict(String[] dict, int startIndex, int endIndex
    }
    return -1;
   }
- //3: in place tagging. O(n) time, O(1) space. necessary req. include having int values within a range smaller than the array length
+ //41
+ //1: in place tagging. O(n) time, O(1) space. necessary req. include having int values within a range smaller than the array length
  public static int findDuplicate3(int[] arr) {
     // write the body of your function here
     int dup = -1;
@@ -58,9 +63,62 @@ public static int rotationSearchDict(String[] dict, int startIndex, int endIndex
     }
     return dup;
 }
+//counting sort
+//brute force algorithms
+//greedy algorithms
 //1
 //1 : greedily update minvalue and maxprofit. O(n) time, O(1) space.
 //2
 //1 : maintain a left[] and right[] product for each i. O(n) time O(n) space. return out[] with each left[] * right[]. 
 //3
-//1 : greed select. sort,greedily find highest 3 and check for even number of negative.
+//1 : brute force three loop. O(n^3) time, O(1) space
+//1 : scan and combine. O(n) time, O(1) space
+public static int triplete(int[] arr) {
+        int[] maxThree = new int[3];
+        int[] minTwo = new int[2];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > maxThree[0]) {
+              maxThree[2] = maxThree[1];
+              maxThree[1] = maxThree[0];
+              maxThree[0] = arr[i];
+            }
+            else if (arr[i] > maxThree[1]) {
+              maxThree[2] = maxThree[1];
+              maxThree[1] = arr[i];
+            }
+            else if (arr[i] > maxThree[2]) {
+              maxThree[2] = arr[i];
+            }
+            
+            if (arr[i] < minTwo[0]) {
+              minTwo[1] = minTwo[0];
+              minTwo[0] = arr[i];
+            }
+            else if( arr[i] <minTwo[1]) {
+              minTwo[1] = arr[i];
+            }
+        }
+        return Math.max(maxThree[0]*maxThree[1]*maxThree[2], minTwo[0]*minTwo[1]*maxThree[0]);
+}
+//bottom-up, overlapping subproblems, memoization
+//5
+//15
+//16
+//short circuit evaluation
+//garbage collection
+//closure
+//17
+//18
+//array-slicing
+//hashing
+//11
+//30
+//32
+//34
+//42
+//mutiable vs immutable
+//in-place
+//24
+//26
+//27
+//40
