@@ -101,7 +101,7 @@ public static int triplete(int[] arr) {
         return Math.max(maxThree[0]*maxThree[1]*maxThree[2], minTwo[0]*minTwo[1]*maxThree[0]);
 }
 //bottom-up, overlapping subproblems, memoization
-//5
+//5 making change
 *(review code)//1: dynamicly iterate (bottom-up) through coins and mem array. O(c*n) time, O(n) space.
 //   for each index in memArray and each coin, if index >= coin, add combinations of remainder.
 public static long change(int change, int[] coins) {
@@ -113,9 +113,27 @@ public static long change(int change, int[] coins) {
             table[j] += table[j -coins[i]];
         return table[change];
 }
-//15
-//1: dynamicly iterate (bottom-up)
-//16
+//15 fabonacci
+// recursively. O(2^n) time, O(n) space.
+static int fib(int n) {
+  if (n<=0) return n;
+  return fib(n-1) + fib(n-2);
+}
+// dynamicly iterate (bottom-up). O(n) time, O(1) space.
+static int fib(int n) {
+  int a = 0, b = 1, temp;
+  if (n == 0) return a;
+  for (int i=2; i<=n; i++) {
+    temp = a+b;
+    a = b;
+    b = temp;
+  }
+  return b;
+}
+// dynamicaly iterate matrix. O(logn) time, O(logn) space.
+//16 cake theif
+// knapsack method (bottom-up)
+
 //short circuit evaluation
 //garbage collection
 //closure
