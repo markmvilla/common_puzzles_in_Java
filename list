@@ -102,7 +102,7 @@ public static int triplete(int[] arr) {
 }
 //bottom-up, overlapping subproblems, memoization
 //5
-//1: dynamicly iterate (bottom-up) through coins and mem array. O(c*n) time, O(n) space.
+*(review code)//1: dynamicly iterate (bottom-up) through coins and mem array. O(c*n) time, O(n) space.
 //   for each index in memArray and each coin, if index >= coin, add combinations of remainder.
 public static long change(int change, int[] coins) {
         int[] table = new int[change + 1];
