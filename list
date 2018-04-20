@@ -103,7 +103,7 @@ public static int triplete(int[] arr) {
 //bottom-up, overlapping subproblems, memoization
 //5 making change
 *(review code)//1: dynamicly iterate (bottom-up) through coins and mem array. O(c*n) time, O(n) space.
-//   for each index in memArray and each coin, if index >= coin, add combinations of remainder.
+// for each index in memArray and each coin, if index >= coin, add combinations of remainder.
 public static long change(int change, int[] coins) {
         int[] table = new int[change + 1];
         Arrays.fill(table,0);
@@ -132,13 +132,12 @@ static int fib(int n) {
 }
 // dynamicaly iterate matrix. O(logn) time, O(logn) space.
 //16 cake theif
-// knapsack method (bottom-up)
-
+*(review code)// knapsack method (bottom-up). O() time, O() space.
 //short circuit evaluation
 //garbage collection
 //closure
-//17
-//18
+//17 scope
+//18 debug
 //array-slicing
 //hashing
 //11
