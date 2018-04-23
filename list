@@ -173,6 +173,7 @@ static boolean isPermPal(String s) {
 //32 top scores
 // count sort
 //34 word data
+// hashtable count. O(n) time, O(n) space. add count elements in hashtable or dictionary after stripping the capitalization and punctiontion.
 //42 iterate once. O(n) time, O(n) space.
 //mutiable vs immutable
 //in-place
