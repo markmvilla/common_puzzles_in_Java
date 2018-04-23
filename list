@@ -145,7 +145,7 @@ static int fib(int n) {
 //11 url storage data structure
 // trie
 //30 permutation palindrone
-//sort and iterate with double count. O(logn) time, O(1) space.
+//sort and iterate with double count. O(nlogn) time, O(1) space.
 //keep count. O(n) time, O(n) space.
 static boolean isPermPal(String s) {
   if(s.length%2 == 0) {
@@ -170,9 +170,10 @@ static boolean isPermPal(String s) {
   }
   return -1
 }
-//32
-//34
-//42
+//32 top scores
+// count sort
+//34 word data
+//42 iterate once. O(n) time, O(n) space.
 //mutiable vs immutable
 //in-place
 //24
