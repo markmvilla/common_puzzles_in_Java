@@ -177,7 +177,8 @@ static boolean isPermPal(String s) {
 //42 iterate once. O(n) time, O(n) space.
 //mutiable vs immutable
 //in-place
-//24
+//24 reverse linked list
+// 
 //26
 //27
 //40
