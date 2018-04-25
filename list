@@ -178,7 +178,35 @@ static boolean isPermPal(String s) {
 //mutiable vs immutable
 //in-place
 //24 reverse linked list
+// in place traversal. O(n) time, O(1) space. the list with a prev, current and next node switching the direction throughout. https://www.youtube.com/watch?v=sYcOK51hl-A
+class LinkedList {
+  public Node head;
+  public class Node {
+    public int value;
+    public Node next;
+    public Node(int value) {
+      this.value = value;
+    }
+  }
+}
+
+public LinkedList reverseLinkedList(LinkedList list) {
+  LinkedListNode prev = null;
+  LinkedListNode curr = list.head;
+  LinkedListNode next = null;
+  
+  while(curr!=null) {
+    next = curr.next;
+    curr.next = prev;
+    prev = curr;
+    curr = next;
+  }
+  LinkedListNode firstNode.head = prev;
+  return head;
+}
+//26 reverse array of characters
+// in place recursevly. O(n) time, O(n) stack space.
+// in place itereatively. O(n) time, O(1) space.
+//27 reverse words
 // 
-//26
-//27
-//40
+//40 find duplicate space edition
