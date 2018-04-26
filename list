@@ -206,7 +206,41 @@ public LinkedList reverseLinkedList(LinkedList list) {
 }
 //26 reverse array of characters
 // in place recursevly. O(n) time, O(n) stack space.
-// in place itereatively. O(n) time, O(1) space.
+// in place itereatively swap. O(n) time, O(1) space.
+public char[] reverse(char[] word) {
+  char temp;
+  for(int i=0; i<word.length/2; i++) {
+    temp = word[i];
+    word[i] = word[word.length-1-i];
+    word[word.length-1-i] = temp;
+  }
+  return word;
+}
+
 //27 reverse words
-// 
+public char[] reverseWords(char[] word) {
+  revChar(word, 0, word.length-1);
+  int len = 0 ;
+  for (int i=0; i<word.length; i++) {
+      if (word[i] == ' ') {
+          revWord(sentence, i-len, i ) ;
+          len = 0;
+          continue;
+      }
+      len++ ;
+  }
+  
+}
+
+public char[] revChar(char[] word, int start, int end) {
+    if (start == end) return;
+    if ( end- start == 1 ) return ;
+    char temp;
+    for (int i=0; i<(end-start)/2 ; i++) {
+        temp = word[i+ start] ;
+        word[i + start] = word[end - i - 1] ;
+        word[end - i -1] = temp ;
+    }
+    return word;
+}
 //40 find duplicate space edition
