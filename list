@@ -8,7 +8,8 @@
 //1: this is a triangular series, n/2*(n+1) >= 100
 //binary search
 //12
-//O(lg n)
+//binary search. O(logn) time O(1) space.
+
 //13
 //recursive binary search O(lg n) time, O(n) space because the call stack and done in-place
 //iterative binary search O(lg n) time, O(1) since done in-place and no call stack
