@@ -2,7 +2,7 @@
 //  4/20/18
 //  Highest Product of Three
 //  O(n^3) time, O(1) space. brute force three loop. O(n^3) time, O(1) space
-//  O(n) time, O(1) space. scan and combine.
+//  O(n) time, O(1) space. scan max 3 and min 2. then return max product of 3 max or 2 min * 1 max.
 
 public class p3 {
 
