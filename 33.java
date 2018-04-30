@@ -1,5 +1,8 @@
-//33
-//use triangluar sum. O(n) time, O(1) space.
+//  Mark Villa
+//  4/20/18
+//  Which Appears Twice
+//  O(n) time, O(1) space. use triangluar sum.
+
 import java.lang.Math;
 
 public class p33 {
