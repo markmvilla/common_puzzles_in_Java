@@ -1,6 +1,8 @@
-//Mark Villa
-//4/20/18
-//binary search. O(lgn) time O(1) space.
+//  Mark Villa
+//  4/20/18
+//  Find in Ordered Set
+//   O(lgn) time O(1) space. binary search.
+
 public class p12 {
 
   public static int binarySearch(int target, int[] input) {
