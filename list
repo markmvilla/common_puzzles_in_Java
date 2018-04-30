@@ -10,38 +10,6 @@
 //closure
 //array-slicing
 //hashing
-//11 url storage data structure
-// trie
-//30 permutation palindrone
-//sort and iterate with double count. O(nlogn) time, O(1) space.
-//keep count. O(n) time, O(n) space.
-static boolean isPermPal(String s) {
-  if(s.length%2 == 0) {
-    int sum = 0;
-    for(int i=0; i< s.length(); i++) {
-      x ^= s.charAt(i);
-    }
-    return (x==0);
-  }
-  else {
-    HashSet<String> mySet= new HashSet<String>();
-    mySet.add ("First");
-    mySet.add ("Second");
-    mySet.add ("Third");
-    for(int i=0; i< s.length(); i++) {
-      if(mySet.contains(s.charAt(i))
-        mySet.remove(s.charAt(i));
-      else
-        mySet.add(s.charAt(i));
-    }
-    return mySet.size <= 1;
-  }
-  return -1
-}
-//32 top scores
-// count sort
-//34 word data
-// hashtable count. O(n) time, O(n) space. add count elements in hashtable or dictionary after stripping the capitalization and punctiontion.
 //42 iterate once. O(n) time, O(n) space.
 //mutiable vs immutable
 //in-place
