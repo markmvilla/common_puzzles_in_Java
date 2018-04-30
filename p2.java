@@ -1,5 +1,6 @@
-// 
-//  O(n) time O(n) space. maintain a left[] and right[] product for each i. return out[] with each left[] * right[].
+//Mark Villa
+//4/20/18
+//O(n) time O(n) space. maintain a left[] and right[] product for each i. return out[] with each left[] * right[].
 
 class Product {
    public int[] products(int[] values) {
