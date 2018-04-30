@@ -1,3 +1,5 @@
-
-//16 cake theif
-*(review code)// knapsack method (bottom-up). O() time, O() space.
+*(review code)
+//  Mark Villa
+//  4/20/18
+//  Cake Theif
+//   O() time, O() space. knapsack method (bottom-up).
