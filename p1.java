@@ -1,2 +1,4 @@
-// Apple Stocks
-// greedily update minvalue and maxprofit. O(n) time, O(1) space.
+//  Mark Villa
+//  4/20/18
+//  Apple Stocks
+//  O(n) time, O(1) space. greedily update minvalue and maxprofit.
