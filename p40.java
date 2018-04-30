@@ -1,8 +1,8 @@
 //  Mark Villa
 //  4/20/18
 //  Find Duplicate. Space Edition.
- // O(n) time, O(n) space. hashmap.
- // O(n) time, O(n) space. count array.
+//  O(n) time, O(n) space. hashmap.
+//  O(n) time, O(n) space. count array.
 
 public class p40 {
 
