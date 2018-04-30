@@ -1,124 +1,13 @@
 //big-o
 //logarithms
 //triangular series
-//1: this is a triangular series, n/2*(n+1) >= 100
- //40
- //1: hashmap search O(n) time, O(n) space
-  public static int findDuplicate(int[] nums) {
-  HashMap < Integer, Integer > hashmap = new HashMap < > ();
-  for (int i = 0; i < nums.length; i++) {
-   if (hashmap.containsKey(nums[i])) {
-    return nums[i];
-   } else {
-    hashmap.put(nums[i], 0);
-   }
-  }
-  return -1;
- }
- //2: count array O(n) time, O(n) space
-  public static int findDuplicate2(int[] nums) {
-   int[] mem = new int[nums.length];
-   for (int i = 0; i < nums.length; i++) {
-    if (mem[nums[i]] > 0) {
-     return nums[i];
-    } else {
-     mem[nums[i]] += 1;
-    }
-   }
-   return -1;
-  }
- //41
- //1: in place tagging. O(n) time, O(1) space. necessary req. include having int values within a range smaller than the array length
- public static int findDuplicate3(int[] arr) {
-    // write the body of your function here
-    int dup = -1;
-    for (int i = 0; i < arr.length; i++) {
-        if(arr[Math.abs(arr[i])] >=0)
-           arr[Math.abs(arr[i])] *= -1;
-        else {
-          dup = Math.abs(arr[i]);
-          break;
-        }
-    }
-    return dup;
-}
 //counting sort
 //brute force algorithms
 //greedy algorithms
-//1
-//1 : greedily update minvalue and maxprofit. O(n) time, O(1) space.
-//2
-//1 : maintain a left[] and right[] product for each i. O(n) time O(n) space. return out[] with each left[] * right[]. 
-//3
-//1 : brute force three loop. O(n^3) time, O(1) space
-//1 : scan and combine. O(n) time, O(1) space
-public static int triplete(int[] arr) {
-        int[] maxThree = new int[3];
-        int[] minTwo = new int[2];
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > maxThree[0]) {
-              maxThree[2] = maxThree[1];
-              maxThree[1] = maxThree[0];
-              maxThree[0] = arr[i];
-            }
-            else if (arr[i] > maxThree[1]) {
-              maxThree[2] = maxThree[1];
-              maxThree[1] = arr[i];
-            }
-            else if (arr[i] > maxThree[2]) {
-              maxThree[2] = arr[i];
-            }
-            
-            if (arr[i] < minTwo[0]) {
-              minTwo[1] = minTwo[0];
-              minTwo[0] = arr[i];
-            }
-            else if( arr[i] <minTwo[1]) {
-              minTwo[1] = arr[i];
-            }
-        }
-        return Math.max(maxThree[0]*maxThree[1]*maxThree[2], minTwo[0]*minTwo[1]*maxThree[0]);
-}
 //bottom-up, overlapping subproblems, memoization
-//5 making change
-*(review code)//1: dynamicly iterate (bottom-up) through coins and mem array. O(c*n) time, O(n) space.
-// for each index in memArray and each coin, if index >= coin, add combinations of remainder.
-public static long change(int change, int[] coins) {
-        int[] table = new int[change + 1];
-        Arrays.fill(table,0);
-        table[0] = 1;
-        for (int i=0; i<coins.length; i++)
-          for (int j=coins[i]; j<=change; j++)
-            table[j] += table[j -coins[i]];
-        return table[change];
-}
-//15 fabonacci
-// recursively. O(2^n) time, O(n) space.
-static int fib(int n) {
-  if (n<=0) return n;
-  return fib(n-1) + fib(n-2);
-}
-// dynamicly iterate (bottom-up). O(n) time, O(1) space.
-static int fib(int n) {
-  int a = 0, b = 1, temp;
-  if (n == 0) return a;
-  for (int i=2; i<=n; i++) {
-    temp = a+b;
-    a = b;
-    b = temp;
-  }
-  return b;
-}
-// dynamicaly iterate matrix. O(logn) time, O(logn) space.
-//16 cake theif
-*(review code)// knapsack method (bottom-up). O() time, O() space.
 //short circuit evaluation
 //garbage collection
 //closure
-//17 scope
-// js and java scope
-//18 debug
-// closures and anonimous functions.
 //array-slicing
 //hashing
 //11 url storage data structure
