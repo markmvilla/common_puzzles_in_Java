@@ -1,7 +1,8 @@
 //  Mark Villa
 //  4/20/18
 //  Parenthesis Matching
-//  O(n) time, O(1) space. check when stack empty.
+//  O(n) time, O(n) space. check when stack empty.
+//  O(n) time, O(1) space. jst count numbers instead of pushing into stack. will implement later.
 
 import java.util.Stack;
 
