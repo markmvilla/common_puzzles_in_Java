@@ -4,7 +4,7 @@
 //  O(n) time, O(n) space. hashmap.
 //  O(n) time, O(n) space. count array.
 
-public class p40 {
+public class p42 {
 
   public static int findDuplicateUsingHashMap(int[] nums) {
     HashMap <Integer, Integer> hashmap = new HashMap <> ();
