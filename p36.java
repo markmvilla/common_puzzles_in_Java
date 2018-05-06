@@ -10,8 +10,8 @@ public class P36 {
 		int[] sh = {2,4,6,8,10};
 		int[] full = {1,3,5,2,4,6,7,8,9,10};
 		System.out.println(isRiffle(fh,sh,full));
-	}
-		 
+	} 
+	
     public static Boolean isRiffle(int[] half1, int[] half2, int[] deck )  {
         int half1Count = 0, half2Count = 0;
         for (int i = 0; i < deck.length ; i++) {
