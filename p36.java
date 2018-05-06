@@ -12,7 +12,6 @@ public class P36 {
 		System.out.println(isRiffle(fh,sh,full));
 	}
 		 
-	
     public static Boolean isRiffle(int[] half1, int[] half2, int[] deck )  {
         int half1Count = 0, half2Count = 0;
         for (int i = 0; i < deck.length ; i++) {
