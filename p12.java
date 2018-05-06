@@ -3,10 +3,9 @@
 //  Find in Ordered Set
 //   O(lgn) time O(1) space. binary search.
 
-public class p12 {
+public class P12 {
 
   public static int binarySearch(int target, int[] input) {
-  
     int floor = -1;
     int ceiling = input.length;
 
@@ -14,14 +13,12 @@ public class p12 {
       guessIndex = floor + (ceiling - floor)/2;
       guessValue = input[guessIndex];
       
-      if(guessValue == target) {
-        return guessIndex
-      }
-      if(guessValue > target) {
+      if(guessValue == target)
+        return guessIndex;
+      if(guessValue > target) 
         ceiling = guessIndex;
-      }else {
+      else 
         floor = guessIndex;
-      }
       return -1;
     }
   }
