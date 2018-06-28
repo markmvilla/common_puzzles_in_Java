@@ -7,7 +7,7 @@ import java.util.*;
 
 public class P14 {
 
-    public Boolean isAvailable(Integer flightLength , Integer[] movies) {
+    public boolean isAvailable(Integer flightLength , Integer[] movies) {
         Map<Integer, Integer> sums = new HashMap<Integer, Integer>();
         for (Integer movieLength : movies) {
             if (sums.get(movieLength) != null) return true ;
