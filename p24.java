@@ -27,5 +27,5 @@ public LinkedList reverseLinkedList(LinkedList list) {
     curr = next;
   }
   LinkedListNode firstNode.head = prev;
-  return head;
+  return firstNode;
 }
