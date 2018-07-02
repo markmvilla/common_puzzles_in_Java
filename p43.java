@@ -15,7 +15,7 @@ public class p43 {
 		int half1Count     = 0, half2Count = 0;
 	  	int[] merged = new int[arr1.length + arr2.length];
 	  	for (int i = 0; i < merged.length ; i++) {
-			if (half1Count < arr1.length && half1Count < arr2.length) {
+			if (half1Count < arr1.length && half2Count < arr2.length) {
 			  if (arr1[half1Count] >= arr2[half2Count]) {
 				merged[i] = arr2[half2Count];
 				half2Count++;
